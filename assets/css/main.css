@@ -2032,7 +2032,16 @@ input, select, textarea {
 			}
 
 			.main.style3.secondary {
-				background: #f8f2e1;
+				background: url(../../images/jaller-logo2.svg);
+				background-size: cover;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			.secondary h2,
+			.secondary p {
+				color: #fff;
 			}
 
 		.main.dark {
@@ -2320,6 +2329,10 @@ input, select, textarea {
 			-webkit-transform: translateY(100%);
 			-ms-transform: translateY(100%);
 			transform: translateY(100%);
+		}
+
+		.contact-tag {
+			background-color: rgba(0, 0, 0, 0.35);
 		}
 
 		@media screen and (max-width: 736px) {
