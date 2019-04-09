@@ -2247,13 +2247,33 @@ input, select, textarea {
 
 /* One */
 
-	#one {
+	#one, #three {
 		background: url("../../images/jaller-logo2.svg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 	}
+
+	#one li {
+		font-size: 1.2em;
+		padding-bottom: 5px;
+	}
+	#one i {
+		color: #00B5D1;
+		transition: all 0.2s;
+	}
+
+	#one i:active,
+	#one i:hover {
+		color: #EF4A41;
+	}
+
+	#one a {
+		text-decoration: none;
+	}
+
+
 
 /* Two */
 
