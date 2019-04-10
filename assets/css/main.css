@@ -668,10 +668,11 @@ input, select, textarea {
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
+		font-size: 1em;
 		height: 3.5em;
 		line-height: 3.5em;
 		outline: 0;
-		padding: 0 2em 0 2em;
+		padding: 0 3em 3em 3em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
