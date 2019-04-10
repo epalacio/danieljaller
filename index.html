@@ -39,6 +39,9 @@
 		<meta property="og:description" content="Sitio web official de Daniel Jaller. Encuentra ac&aacute; toda la informaci&oacute;n sobre el artista. M&uacute;sica, eventos y m&aacute;s!">
 		<meta property="og:url" content="www.danieljaller.com">
 
+		<!-- Pageclip -->
+		<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
 
 	</head>
 	<body class="is-preload">
@@ -145,16 +148,16 @@
 				<div class="content">
 					<header class="contact-tag">
 						<h2>¡Suscríbete a mi Newsletter!</h2>
-						<p>¿Te interesa saber más de mi y mi música?</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form action="https://send.pageclip.co/vPtcCLtpTaROI3qDzN2gbcek2mUFsD0h/Newsletter" class="pageclip-form" method="post">
 							<div class="fields">
-								<div class="field half"><label for="name"><input type="text" name="name" placeholder="Nombre" /></label></div>
-								<div class="field half"><label for="email"><input type="email" name="email" placeholder="Email" /></label></div>
+								<div class="field half"><label for="name"><input type="text" name="name" placeholder="Nombre" required /></label></div>
+								<div class="field half"><label for="email"><input type="email" name="email" placeholder="Email" required /></label></div>
 							</div>
+							<p>Al dar click en "Enviar", autorizo a Daniel Jaller Oficial para que conserven la información aquí suministrada y me contacten con el fin de mantenerme actualizado sobre el artista.</p>
 							<ul class="actions special">
-								<li><input type="submit" value="Enviar" /></li>
+								<li><input class="pageclip-form__submit" type="submit" value="Enviar" /></li>
 							</ul>
 						</form>
 					</div>
@@ -187,6 +190,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 	</body>
 </html>

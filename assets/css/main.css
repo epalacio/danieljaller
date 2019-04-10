@@ -2351,6 +2351,10 @@ input, select, textarea {
 			transform: translateY(100%);
 		}
 
+		#contact p {
+			color: #39454B;
+		}
+
 		.contact-tag {
 			background-color: rgba(0, 0, 0, 0.35);
 		}
