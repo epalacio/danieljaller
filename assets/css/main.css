@@ -2079,7 +2079,8 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
-				width: 40%;
+				background: rgba(255, 255, 255, 0.65);
+				width: 70%;
 			}
 
 		}
@@ -2087,7 +2088,8 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.main.style2 .content {
-				width: 50%;
+				background: rgba(255, 255, 255, 0.65);
+				width: 80%;
 			}
 
 		}
@@ -2095,7 +2097,7 @@ input, select, textarea {
 		@media screen and (max-width: 1000px) {
 
 			.main.style2 .content {
-				width: 60%;
+				width: 80%;
 			}
 
 		}
@@ -2295,6 +2297,11 @@ input, select, textarea {
 				font-size: 17pt;
 			}
 
+			.video-oficial {
+				width: 75vw;
+				height: 85vh;
+			}
+
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2309,6 +2316,11 @@ input, select, textarea {
 
 			body, input, textarea, select {
 				font-size: 13pt;
+			}
+
+			.video-oficial {
+				width: 80vw;
+				height: 66vh;
 			}
 
 		}
@@ -2326,6 +2338,11 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 12pt;
 				line-height: 1.5em;
+			}
+
+			.video-oficial {
+				width: 80vw;
+				height: 45vh;
 			}
 
 		}
@@ -2378,3 +2395,67 @@ input, select, textarea {
 			}
 
 		}
+
+/* Modals */
+.shadow{
+	z-index:2;
+	position: absolute;
+	top:0px;
+   	left:0px; 
+	width:100%;
+	height:100vh;
+	background: rgba(0,0,0,0.6);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .main-modal{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+  }
+
+  .video-oficial {
+	width: 90vw;
+	height: 65vh;
+	margin-bottom: 20px;
+  }
+  
+  .hideModal{
+	  z-index:-1;
+	  opacity:0;
+	animation: hide .25s;
+	
+  transform: scale(0);
+  }@keyframes hide {
+	from{
+		z-index:2;
+  transform: scale(1);
+	  opacity:1;
+	} to{
+		z-index:-1;
+  transform: scale(0);
+	  opacity: 0;
+	}
+  }
+  .showModal{
+	opacity:1;
+	  z-index:2;
+	animation: show .2s;
+	
+  transform: scale(1);
+  }
+  @keyframes show {
+	from{
+	  
+  transform: scale(0);
+	  opacity:0;
+		z-index:-1;
+	} to{
+	  
+  transform: scale(1);
+	  opacity: 1;
+		z-index:2;
+	}
+  }

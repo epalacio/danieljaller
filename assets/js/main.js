@@ -217,3 +217,27 @@
 			});
 
 })(jQuery);
+
+// Modals
+let modal = document.querySelector('#modal-window');
+let videoOficial = document.querySelector('.video-oficial');
+let videoInspiracion = document.querySelector('.video-inspiracion')
+let closeVideoButton = document.querySelector('#cerrar-video');
+
+
+function openModal(){
+	modal.classList.add("showModal");
+	videoOficial.setAttribute('src', 'https://www.youtube.com/embed/ifAb8OITAQU');
+}
+
+window.addEventListener('keydown', function (event) {
+	if (event.key === 'Escape') {
+		modal.classList.remove("showModal");
+		videoOficial.removeAttribute('src');
+	}
+})
+
+closeVideoButton.addEventListener('click', function (event) {
+	modal.classList.remove("showModal");
+	videoOficial.removeAttribute('src');
+})
