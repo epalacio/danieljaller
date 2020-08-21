@@ -227,7 +227,7 @@ let closeVideoButton = document.querySelector('#cerrar-video');
 
 function openModal(){
 	modal.classList.add("showModal");
-	videoOficial.setAttribute('src', 'https://www.youtube.com/embed/ifAb8OITAQU');
+	videoOficial.setAttribute('src', 'https://www.youtube.com/embed/sw4fSjpHwfE');
 }
 
 window.addEventListener('keydown', function (event) {
