@@ -241,3 +241,9 @@ closeVideoButton.addEventListener('click', function (event) {
 	modal.classList.remove("showModal");
 	videoOficial.removeAttribute('src');
 })
+
+// Copyright date
+const date = new Date().getFullYear();
+const copyrightDiv = document.getElementById('copyright');
+
+copyrightDiv.innerHTML = `&copy; Daniel Jaller | ${date}</p>`
